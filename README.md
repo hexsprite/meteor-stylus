@@ -8,11 +8,12 @@ supports ecmascript and caching and added the same stylus plugins that
 `mquandalle:stylus` used so it is backwards compatible with `mquandalle:stylus`.
 
 
-### 1.1.3 Update
+### 1.2.0 Update
 
 Compatible with Meteor 3.0:
-  - Updated dependencies. 
+  - Updated dependencies.
   - Replaced `Future` with `async`/`await`.
+  - You need to use at least Meteor 2.8.1 to use this package.
 
 ### 1.1.0 Update
 

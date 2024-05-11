@@ -1,5 +1,5 @@
 {
-  "lockfileVersion": 4,
+  "lockfileVersion": 1,
   "dependencies": {
     "amdefine": {
       "version": "1.0.1",
@@ -47,9 +47,9 @@
       "integrity": "sha512-vCBhhZxZ5WQ7IASBt89jwUAKiLu+ctcWMIGW4lrrKmmH3SIrvEGzGC8FJH9j5NT1ujvFiLZoGK3lzf0UcYWd9g=="
     },
     "caniuse-db": {
-      "version": "1.0.30001579",
-      "resolved": "https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30001579.tgz",
-      "integrity": "sha512-tTO2z4FJHK2F1kFpw201fb9Hxig1tQaaNRzK9OSYdJRWkDpfvVMXTy12Qc18QlraHFQNPgkZFkk2xbbG7Q+6cA=="
+      "version": "1.0.30001617",
+      "resolved": "https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30001617.tgz",
+      "integrity": "sha512-JEfZYiroeTkXqNyFv8JJR0aN1tpTgBhst4UawTTKQ7ZVlAsMPWq1U8H9F/THtIXcV6u3CZCFEnkX+Fhgve8Z/w=="
     },
     "chalk": {
       "version": "1.1.3",
@@ -211,8 +211,7 @@
       "integrity": "sha512-VhumSSbBqDTP8p2ZLKj40UjBCV4+v8bUSEpUb4KjRgWk9pbqGF4REFj6KEagidb2f/M6AzC0EmFyDNGaw9OCzg=="
     },
     "stylus": {
-      "version": "0.54.5",
-      "resolved": "https://github.com/manueltimita/stylus/tarball/6eabf4db170b962a244243e0992ccca3b740dc7f",
+      "version": "https://github.com/manueltimita/stylus/tarball/6eabf4db170b962a244243e0992ccca3b740dc7f",
       "integrity": "sha512-AFq/Q4n4l6dIjNk01z/ho57jqMthNmZuVVgijkpLO2hvI8vK1YN83DCRrlC+G0fRXLs3CgF8rl+CSuIbL3vprA=="
     },
     "supports-color": {
