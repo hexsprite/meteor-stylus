@@ -2,7 +2,7 @@ const stylus = Npm.require('stylus');
 const fs = Plugin.fs;
 const path = Plugin.path;
 
-const nib = Npm.require('nib');
+// const nib = Npm.require('nib');
 const jeet = Npm.require('jeet');
 const rupture = Npm.require('rupture');
 const axis = Npm.require('axis');
@@ -147,7 +147,7 @@ class StylusCompiler extends MultiFileCachingCompiler {
         const isAbsolute = filePath[0] === '/';
         const isStylusBuiltIn =
           filePath.indexOf('/node_modules/stylus/lib/') !== -1;
-        const isNib = filePath.indexOf('/node_modules/nib/lib/nib/') !== -1;
+        // const isNib = filePath.indexOf('/node_modules/nib/lib/nib/') !== -1;
         const isAxis = filePath.indexOf('/node_modules/axis/axis/') !== -1;
         const isJeet = filePath.indexOf('/node_modules/jeet/styl/') !== -1;
         const isRupture =
@@ -158,7 +158,7 @@ class StylusCompiler extends MultiFileCachingCompiler {
         if (
           isAbsolute ||
           isStylusBuiltIn ||
-          isNib ||
+          // isNib ||
           isAxis ||
           isJeet ||
           isRupture ||
@@ -198,12 +198,13 @@ class StylusCompiler extends MultiFileCachingCompiler {
     const fileOptions = inputFile.getFileOptions();
 
     // Here is where the stylus module is instantiated and plugins are attached
+    // NOTE: nib() disabled - its flex() mixin conflicts with CSS flex property
     let style = stylus(inputFile.getContentsAsString())
-      .use(axis())
-      .use(nib())
-      .use(rupture())
-      .use(jeet())
-      .use(typographic());
+      // .use(axis())
+      // .use(nib())
+      // .use(rupture())
+      // .use(jeet())
+      // .use(typographic());
 
     if (fileOptions.autoprefixer) {
       style = style.use(autoprefixer(fileOptions.autoprefixer));
